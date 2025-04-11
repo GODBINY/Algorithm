@@ -13,7 +13,7 @@ hour += parseInt(addHour)
 min += parseInt(addMin)
 
 if(min>=60){
-  hour = parseInt(min/60)
+  hour += parseInt(min/60)
   min = min%60
 }
 
