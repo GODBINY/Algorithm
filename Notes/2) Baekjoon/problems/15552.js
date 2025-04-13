@@ -1,16 +1,11 @@
 const fs = require("fs");
 const input = fs.readFileSync("../inputs/15552.txt").toString().trim().split("\n");
 
-
 function solution(input) {
   let returnStr = '';
-  for(let i=0; i<input[0]; i++){
-    input.map((item,idx)=>{
-      if(idx>0){
-        let ab = item.split(' ').map(Number);
-        returnStr += ab[0]+ab[1]+'\n';
-      }
-    })
+  for(let i=1; i<=input[0]; i++){
+    let ab = input[i].split(' ').map(Number);
+    returnStr += ab[0]+ab[1]+'\n';
   }
   return returnStr;
 }
