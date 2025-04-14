@@ -1,7 +1,8 @@
 const fs = require("fs");
 const input = fs.readFileSync("../inputs/2675.txt").toString().trim().split("\n");
 
-function solution(arr) {
+// 1. 나의 풀이
+function solution1(arr) {
   arr.shift();
   let txt = "";
   arr.forEach((item) => {
@@ -16,4 +17,17 @@ function solution(arr) {
   console.log(txt);
 }
 
-solution(input);
+// 2. 새 풀이 
+function solution2(testCase) {
+  for (let i = 1; i <= testCase; i++) {
+    let [r, s] = input[i].split(' ');
+    let result = '';
+    for (let j = 0; j < s.length; j++) {
+      result += s.charAt(j).repeat(r);
+    }
+    console.log(result);
+  }
+}
+
+// solution1(input);
+solution2(input[0]);
