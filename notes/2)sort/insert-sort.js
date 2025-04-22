@@ -5,7 +5,7 @@ function insertSort(arr) {
         let temp = arr[j];
         arr[j] = arr[j - 1];
         arr[j - 1] = temp;
-      } else {
+      } else { // 삽입정렬의 핵심! 이미 정렬되어있는 애들에 삽입하는거라, 더이상 비교할 필요 없으면 break
         break;
       }
     }
