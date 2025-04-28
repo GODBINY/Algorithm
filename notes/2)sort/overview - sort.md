@@ -10,3 +10,14 @@
 3. 삽입정렬
 
 4. 병합정렬
+
+
+#### Javascript 정렬 라이브러리
+######sort()
+  - O(NlogN)을 보장함.
+  - 문제 풀 때 정렬 필요하면 sort() 쓰면 됨.
+  - sort() 못 쓸때에는 mergeSort등의 알고리즘을 직접 구현하여 사용하자.
+  - arr.sort(compareFunction);
+    - 
+
+
