@@ -7,4 +7,5 @@ const arr2 = input[1].split(' ').map(Number);
 
 arr2.sort((a, b) => a - b);
 console.log(arr2[k - 1]);
+console.log(arr2);
 
