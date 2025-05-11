@@ -15,4 +15,5 @@ arr.sort((a, b) => {
   }
 });
 
-console.log(arr);
+let output = arr.map(e => e.join(' ') + '\n')
+console.log(output.join(''))
