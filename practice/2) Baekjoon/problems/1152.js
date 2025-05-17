@@ -6,6 +6,7 @@ function solution(data) {
   let words = data.split(' ');
   if (words == "") {
     return 0;
+
   }
   return words.length;
 }
