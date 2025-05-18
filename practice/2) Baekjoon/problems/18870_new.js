@@ -6,7 +6,7 @@ let input = fs
   .split("\n");
 
 // 초기 배열
-let length =internal Number(input[0]);
+let length = Number(input[0]);
 let arr = input[1].split(" ").map(Number);
 
 console.log(arr);
