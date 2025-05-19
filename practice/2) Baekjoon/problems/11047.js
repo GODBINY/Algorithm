@@ -5,13 +5,11 @@ const input = fs
   .trim()
   .split("\n");
 
-let type = input[0].split(" ")[0];
 let totalMoney = input[0].split(" ")[1];
 input.shift();
-input.sort((a, b) => b - a);
-input.map(Number);
 
-console.log(input);
+input.sort((a, b) => b - a);
+
 let count = 0;
 let remain = Number(totalMoney);
 
