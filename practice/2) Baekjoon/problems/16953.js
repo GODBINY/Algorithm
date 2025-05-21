@@ -1,6 +1,4 @@
-const { reverse } = require("dns");
-const fs = require("fs");
-const input = fs
+const fs = require("fs"); const input = fs
   .readFileSync("../inputs/16953.txt")
   .toString()
   .trim()
@@ -12,38 +10,31 @@ const input = fs
 let inputs = input[0].split(' ');
 let answer = 0;
 let output = inputs[1];
-let isValid = false;
+let isValid = 0;
 let lastChar = output[output.length - 1];
 reverseCal(output);
-
 // 끝의 자리가 1 2 3 4 5 6 7 8 9
 // 1: 1붙이기 연산한거
 // 2 4 6 8 : 2배 연산한거
 // 3 5 7 9 : 연산 자체를 안한 것
 function reverseCal(num) {
-  if (num === 1) {
+  if (Number(num) < Number(inputs[0]) || isValid) {
     return
   }
   let number = num.toString();
-  console.debug('num', num)
-  if (num === inputs[0]) { isValid = true }
-  let lastChar = number[number.length - 1];
-  console.debug('lastChar', lastChar)
+  if (number === inputs[0]) {
+    isValid = true;
+    return;
+  }
+  let lastChar = Number(number.toString()[number.toString().length - 1]);
   if (lastChar % 2 === 0) {
-    console.log('1번')
     answer++;
-    reverseCal(number / 2)
-  } else if (lastChar === '1') {
-    console.log('2번')
+    reverseCal(Number(number) / 2)
+  } else if (lastChar === 1) {
     answer++;
-    console.log(number.slice(0, number.length - 1));
-    reverseCal(number.slice(0, number.length - 1));
-  } else {
-    console.log('3번')
-    console.log(number)
-    reverseCal(number);
+    reverseCal(number.toString().slice(0, number.toString().length - 1));
+  } else if (lastChar % 2 === 1) {
     return;
   }
 }
-console.log(isValid);
-console.log(isValid ? answer : -1);
+console.log(isValid ? answer + 1 : -1);
