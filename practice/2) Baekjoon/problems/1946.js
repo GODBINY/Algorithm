@@ -27,12 +27,14 @@ let sortedList = result.map((item, idx) => {
   sortedArr.sort((a, b) => Number(a[0]) - Number(b[0]));
   return sortedArr;
 })
-
+console.log(sortedList)
+result.sort((a, b) => Number(a[0]) - Number(b[0]));
+console.log(result)
 // console.log(sortedList)
 
 let answer = [];
 
-sortedList.forEach((item) => {
+result.forEach((item) => {
   let innerAnswer = 0;
   let min = 100001;
 
