@@ -1,4 +1,5 @@
-const fs = require("fs"); const input = fs
+const fs = require("fs");
+const input = fs
   .readFileSync("../inputs/16953.txt")
   .toString()
   .trim()
