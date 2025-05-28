@@ -5,39 +5,27 @@ const input = fs
   .trim()
   .split("\n");
 
-input.shift();
-
 let result = [];
-let tempArr = [];
-let idx = 0;
+let i = 1;
 
-for (let i = 0; i < input.length; i++) {
-  if (input[i].split(' ').length === 1) {
-    idx = Number(input[i]);
-  } else {
-    tempArr.push(input[i].split(' '));
-    if (tempArr.length === idx) {
-      result.push(tempArr);
-      tempArr = [];
-    }
+while (i < input.length) {
+  const count = Number(input[i]);
+  let tempArr = [];
+
+  for (let j = 1; j <= count; j++) {
+    tempArr.push(input[i + j].split(' ').map(Number));
   }
+
+  result.push(tempArr);
+  i += count + 1;
 }
-let sortedList = result.map((item, idx) => {
-  let sortedArr = [...item];
-  sortedArr.sort((a, b) => Number(a[0]) - Number(b[0]));
-  return sortedArr;
-})
-console.log(sortedList)
-result.sort((a, b) => Number(a[0]) - Number(b[0]));
-console.log(result)
-// console.log(sortedList)
 
 let answer = [];
-
 result.forEach((item) => {
   let innerAnswer = 0;
   let min = 100001;
 
+  item.sort((a, b) => a[0] - b[0]);
   for (let [x, y] of item) {
     if (y < min) {
       min = y;
@@ -46,6 +34,5 @@ result.forEach((item) => {
   }
 
   answer.push(innerAnswer);
-})
-
-console.log(answer.join('\n'))
+});
+console.log(answer.join('\n'));
