@@ -8,33 +8,26 @@ const input = fs
 console.log(input);
 
 const num = input.shift();
-const arr = input.map(item => item.split(' ').map(Number)).sort((a, b) => a[1] - b[1]);
+const arr = input.map(item => item.split(' ').map(Number)).sort((a, b) => {
+  if (a[1] !== b[1]) {
+    return a[1] - b[1]
+  } else {
+    return a[0] - b[0];
+  }
+});
 
 console.log(num);
 console.log(arr);
 
-let lastValue = [];
-let answer = 0;
+let count = 0;
+let [a, b] = [0, 0];
 
-for (let i = 0; i < num; i++) {
-  if (i === 0) {
-    lastValue = arr[i][1];
-    answer++;
-  } else {
-    let min = 2 ** 31 - 1;
-    let fitValue = [];
-    for (let j = i; j < num; j++) {
-      if (lastValue - arr[j][0] < min) {
-        min = lastValue - arr[j][0];
-        fitValue = arr[j];
-      }
-    }
-    if (fitValue != []) {
-      lastValue = fitValue[1];
-      console.log(lastValue);
-      answer++
-    }
+for ([c, d] of arr) {
+  if (c >= b) {
+    count++;
+    [a, b] = [c, d];
   }
 }
-console.log(answer)
+
+console.log(count);
 
