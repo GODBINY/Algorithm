@@ -14,7 +14,7 @@ function solution2(arr){
     if(item >= max){
       max = item;
     }
-    if(item <= min){
+    f(item <= min){
       min = item;
     }
   })
