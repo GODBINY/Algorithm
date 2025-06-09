@@ -15,12 +15,14 @@ let limit = 0; // k가 있다면 n은 limit 이상이어야 한다.
 for (let num = 1; num <= k; num++) {
   limit += num;
 }
+console.log(limit)
 
 if (limit <= n) {
-  if (n % k !== 0) {
-    console.log(k)
-  } else {
+  n = n - limit;
+  if (n % k === 0) {
     console.log(k - 1);
+  } else {
+    console.log(k);
   }
 } else {
   console.log(-1);
