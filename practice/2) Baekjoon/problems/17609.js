@@ -9,42 +9,35 @@ const input = fs
 let tc = Number(input[0]);
 
 for (let i = 1; i <= tc; i++) {
-  checkFunc(input[i]);
+  // checkFunc(input[i]);
+  newCheckFunc(input[i]);
 }
 
-function checkFunc(word) {
-  let leftIdx = 0;
-  let rightIdx = word.length - 1;
-  let count = 0;
-  // console.log(word);
-  // console.log(leftIdx, rightIdx)
-  // 안되는 예시 :  acbca
-  while (count < 2 && parseInt((word.length - 1) / 2) >= leftIdx) {
+function checkPalindrome(x) {
+  return x == x.split('').reverse().join('');
+}
 
-    if (word[leftIdx] === word[rightIdx]) {
-      if (rightIdx === leftIdx) {
-        count++;
+function newCheckFunc(word) {
+  if (checkPalindrome(word)) {
+    console.log(0);
+  } else {
+    let count = 0;
+    let n = word.length;
+    for (let i = 0; i < parseInt(n / 2); i++) {
+      if (word[i] !== word[n - 1 - i]) {
+        if (checkPalindrome(word.slice(0, i) + word.slice(i + 1, n))) {
+          count++;
+        }
+        if (checkPalindrome(word.slice(0, n - i - 1) + word.slice(n - i, n))) {
+          count++;
+        }
         break;
-      } else {
-        leftIdx++;
-        rightIdx--;
       }
-      // console.log(word[leftIdx], word[rightIdx])
-    } else if (word[leftIdx] === word[rightIdx - 1]) {
-      // console.log(word[leftIdx], word[rightIdx - 1])
-      leftIdx++;
-      rightIdx -= 2;
-      count++;
-    } else if (word[leftIdx + 1] === word[rightIdx]) {
-      // console.log(word[leftIdx + 1], word[rightIdx])
-      leftIdx += 2;
-      rightIdx--;
-      count++
+    }
+    if (count > 0) {
+      console.log(1);
     } else {
-      count = 2;
+      console.log(2);
     }
   }
-
-  console.log(count)
 }
-
