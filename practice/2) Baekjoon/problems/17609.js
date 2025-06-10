@@ -18,11 +18,18 @@ function checkFunc(word) {
   let count = 0;
   // console.log(word);
   // console.log(leftIdx, rightIdx)
-  while (rightIdx - leftIdx > 1 && count < 2) {
+  // 안되는 예시 :  acbca
+  while (count < 2 && parseInt((word.length - 1) / 2) >= leftIdx) {
+
     if (word[leftIdx] === word[rightIdx]) {
+      if (rightIdx === leftIdx) {
+        count++;
+        break;
+      } else {
+        leftIdx++;
+        rightIdx--;
+      }
       // console.log(word[leftIdx], word[rightIdx])
-      leftIdx++;
-      rightIdx--;
     } else if (word[leftIdx] === word[rightIdx - 1]) {
       // console.log(word[leftIdx], word[rightIdx - 1])
       leftIdx++;
@@ -35,7 +42,6 @@ function checkFunc(word) {
       count++
     } else {
       count = 2;
-      break;
     }
   }
 
