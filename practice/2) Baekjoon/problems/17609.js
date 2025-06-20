@@ -24,7 +24,7 @@ function newCheckFunc(word) {
     let count = 0;
     let n = word.length;
     for (let i = 0; i < parseInt(n / 2); i++) {
-      if (word[i] !== word[n - 1 - i]) {
+      if (word[i] != word[n - 1 - i]) {
         if (checkPalindrome(word.slice(0, i) + word.slice(i + 1, n))) {
           count++;
         }
