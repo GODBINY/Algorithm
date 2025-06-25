@@ -10,3 +10,10 @@
 	- start의 범위는 문제를 잘 읽고 판단해야 한다! 문제에서 0~10억이라고 대놓고 범위 줬음.
 - 1654번
 	- https://www.acmicpc.net/problem/1654
+	- 파라메트릭 서치
+### 25.06.26
+- 10816번
+	- https://www.acmicpc.net/problem/10816
+	- 파라메트릭 서치
+	- upperBound, lowerBound로 count 구했음
+	- 유의할 점 :  결과 출력할 때 arr.push()랑 arr.join(' ') 활용하자.
