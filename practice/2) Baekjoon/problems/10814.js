@@ -1,5 +1,4 @@
 let fs = require("fs");
-const { argv0 } = require("process");
 let input = fs
   .readFileSync("../inputs/10814.txt")
   .toString()

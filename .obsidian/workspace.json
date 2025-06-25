@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2)sort/overview - sort.md",
+                "file": "Journal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "overview - sort"
+              "title": "Journal"
             }
           }
         ]
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -170,6 +171,7 @@
   },
   "active": "c6e0d47607c61166",
   "lastOpenFiles": [
+    "notes/2)sort/overview - sort.md",
     "Notes/1) Programmers/코딩 기초 트레이닝_ 문자열로 변환.md",
     "Notes/1) Programmers/코딩 기초 트레이닝_정수찾기.md",
     "Notes/1) Programmers/코딩 기초 트레이닝_부분 문자열인지 확인하기.md",
