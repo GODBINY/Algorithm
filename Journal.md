@@ -17,3 +17,16 @@
 	- 파라메트릭 서치
 	- upperBound, lowerBound로 count 구했음
 	- 유의할 점 :  결과 출력할 때 arr.push()랑 arr.join(' ') 활용하자.
+### 25.06.27
+- 18353번
+	- https://www.acmicpc.net/problem/18353
+	- LIS(Longest Increasing Subsequence) 알고리즘 활용
+	- (LDS는 그냥 배열만 뒤집으면 돼. arr.reverse())
+- 1300번
+	- https://www.acmicpc.net/problem/1300
+- 15649번
+	- https://www.acmicpc.net/problem/15649
+- 10974번
+	- https://www.acmicpc.net/problem/10974
+- 7490번
+	- https://www.acmicpc.net/problem/7490
