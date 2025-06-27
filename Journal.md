@@ -22,8 +22,10 @@
 	- https://www.acmicpc.net/problem/18353
 	- LIS(Longest Increasing Subsequence) 알고리즘 활용
 	- (LDS는 그냥 배열만 뒤집으면 돼. arr.reverse())
+	- 맨처음건 그냥 넣고, 두번째부터는 이전값보다 지금값이 크면 유지, 작으면 바꿔치기 - 근데 바꿔치기 인덱스는 lowerBound로 계산.
 - 1300번
 	- https://www.acmicpc.net/problem/1300
+	- 
 - 15649번
 	- https://www.acmicpc.net/problem/15649
 - 10974번
