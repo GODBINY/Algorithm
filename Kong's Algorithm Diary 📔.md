@@ -31,6 +31,8 @@
 	- 내가 원하는 값을 포함하거나 더 클 때 > 범위를 줄인다. (그래야 2 2 2 에서도 가장 작은 2를 찾을 수 있으니.)
 - 15649번
 	- https://www.acmicpc.net/problem/15649
+	- 오름차순인데 중복되면 안된대 > 순열이 아니라 조합임!
+	- 나보다 큰것들중에 남은 것들 갯수가 M-현재상태 보다 적으면 return 해버려
 - 10974번
 	- https://www.acmicpc.net/problem/10974
 - 7490번
@@ -48,3 +50,10 @@
 	- https://www.acmicpc.net/problem/2961
 - 6603번
 	- https://www.acmicpc.net/problem/6603
+### 25.07.01
+- 9663번
+	- https://www.acmicpc.net/problem/9663
+- 1987번
+	- https://www.acmicpc.net/problem/1987
+- 2529번
+	- https://www.acmicpc.net/problem/2529

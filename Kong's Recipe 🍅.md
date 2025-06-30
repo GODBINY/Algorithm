@@ -6,6 +6,7 @@
 [[Parametric Search]]
 [[LIS(Longest Increase Sequence)]]
 # Back Tracking
+[[N-Queen]]
 # DFS
 # BFS
 # Dynamic Programming

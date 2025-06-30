@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/4)Ingredients 🥦/Combination & Permutation.md",
+                "file": "notes/4)Ingredients 🥦/N-Queen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Combination & Permutation"
+              "title": "N-Queen"
             }
           },
           {
@@ -41,15 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/4)Ingredients 🥦/Lower Bound, Upper Bound (Binary Search).md",
+                "file": "Kong's Algorithm Diary 📔.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lower Bound, Upper Bound (Binary Search)"
+              "title": "Kong's Algorithm Diary 📔"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -197,15 +198,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c6e0d47607c61166",
+  "active": "2914cf53b4baceca",
   "lastOpenFiles": [
-    "notes/4)Ingredients 🥦/Back Tracking.md",
-    "notes/4)Ingredients 🥦/Combination & Permutation.md",
+    "notes/1)data structure/overview.md",
     "Kong's Recipe 🍅.md",
     "Kong's Algorithm Diary 📔.md",
-    "notes/4)Ingredients 🥦/Parametric Search.md",
+    "practice/2) Baekjoon/inputs/15649.txt",
+    "practice/2) Baekjoon/problems/15649.js",
     "notes/4)Ingredients 🥦/Lower Bound, Upper Bound (Binary Search).md",
     "notes/4)Ingredients 🥦/LIS(Longest Increase Sequence).md",
+    "notes/4)Ingredients 🥦/N-Queen.md",
+    "practice/2) Baekjoon/problems/n_queen.js",
+    "notes/4)Ingredients 🥦/Back Tracking.md",
+    "notes/4)Ingredients 🥦/for & continue & break;.md",
+    "notes/4)Ingredients 🥦/Combination & Permutation.md",
+    "notes/4)Ingredients 🥦/Parametric Search.md",
     "notes/4)Ingredients 🥦/Binary Search.md",
     "practice/2) Baekjoon/problems/1300_re.js",
     "notes/4)Ingredients 🥦",
@@ -217,9 +224,6 @@
     "practice/2) Baekjoon/inputs/18353.txt",
     "practice/2) Baekjoon/problems/18353.js",
     "notes/3)Algorithm/parametric search.js",
-    "notes/3)Algorithm/Binary Search_bound.js",
-    "notes/3)Algorithm/Binary Search.js",
-    "notes/3)Algorithm/binary Search/parametric search.js",
     "notes/3)Algorithm/LIS(Longest Increasing Subsequence).md",
     "notes/2)sort/overview - sort.md",
     "Notes/1) Programmers/코딩 기초 트레이닝_ 문자열로 변환.md",
