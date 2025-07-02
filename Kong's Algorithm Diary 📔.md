@@ -33,6 +33,8 @@
 	- https://www.acmicpc.net/problem/15649
 	- 오름차순인데 중복되면 안된대 > 순열이 아니라 조합임!
 	- 나보다 큰것들중에 남은 것들 갯수가 M-현재상태 보다 적으면 return 해버려
+	- 중복허용(조합), 중복불허=순서있어야함(순열)
+	- 순열=백트래킹
 - 10974번
 	- https://www.acmicpc.net/problem/10974
 - 7490번
@@ -57,3 +59,9 @@
 	- https://www.acmicpc.net/problem/1987
 - 2529번
 	- https://www.acmicpc.net/problem/2529
+### 25.07.02
+- DFS 개념
+- 1987번
+	- https://www.acmicpc.net/problem/2606
+- 2529번
+	- https://www.acmicpc.net/problem/1012

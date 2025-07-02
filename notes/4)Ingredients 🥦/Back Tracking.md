@@ -22,3 +22,22 @@ function recursive(){
 
 \[관련]
 [[N-Queen]]
+
+\[예시]
+- N=3, M=2 (1,2,3에서 2자리 수 만들기)
+```JS
+function dfs(depth){
+	if(depth === 2){ // 두자리 수 완성되었다면
+		 console.log(path); // 처리
+		 return;
+	}
+	for(let i=1;i<=3;i++){
+		if(visited[i]) continue; // 방문했었으면 pass
+		visited[i] = true; // 방문 안했으면 방문처리 먼저
+		path.push(i);
+		dfs(depth+1);
+		path.pop();
+		visited[i] = false;
+	}
+}
+```
