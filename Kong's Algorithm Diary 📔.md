@@ -65,3 +65,10 @@
 	- https://www.acmicpc.net/problem/2606
 - 2529번
 	- https://www.acmicpc.net/problem/1012
+### 25.07.03
+- 1240번
+	- https://www.acmicpc.net/problem/1240
+- 4803번
+	- https://www.acmicpc.net/problem/4803
+- 15686번
+	- https://www.acmicpc.net/problem/15686

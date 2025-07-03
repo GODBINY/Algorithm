@@ -8,20 +8,44 @@
 ```JS
 function recursive(){
 	if(종료조건 만족){
-		처리;
+		출력 관련 처리; // 한번에 모으던가 바로 출력하던가
 	}
 	for(자식 노드를 하나씩 확인){
 		if(임의의 조건을 만족하면){
 			자식노드 방문처리;
 			recursive();
 			자식노드 방문처리 해제;
-		}
+		} // 조건에 안맞으면 애초에 안탄다
 	}
 }
 ```
 
+- 좀 더 구체화한 형태
+```JS
+let temp = []; // 각 단계마다 쓰일 임시 그릇
+let visited = new Array(방문여부 표시해야할 것 갯수).fill(false);
+let output = []; //결과 출력용
+
+function dfs(depth){
+	if(조건){output.push(temp.join(' ')); return;} // 예를들면 - 자리수가 만족했냐?
+	for(방문여부 표시해야하는 만큼){
+		visited[i] = true; // 방문여부
+		temp.push(i); // 방문여부
+
+		dfs(depth+1); // 한자리 수 더 깊게..
+
+		temp.pop(); // 저 이 자리수에서는 이친구 구경 끝났어요~
+		visited[i]=false // 저 이 자리수에서는 이 친구 구경 끝났어요~
+	}
+}
+
+dfs(0);
+console.log(output.join('\n'));
+
+```
 \[관련]
 [[N-Queen]]
+[[N과 M(backtracking)]]
 
 \[예시]
 - N=3, M=2 (1,2,3에서 2자리 수 만들기)
