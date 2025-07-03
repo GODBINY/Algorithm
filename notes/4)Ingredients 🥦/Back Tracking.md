@@ -23,7 +23,7 @@ function recursive(){
 - 좀 더 구체화한 형태
 ```JS
 let temp = []; // 각 단계마다 쓰일 임시 그릇
-let visited = new Array(방문여부 표시해야할 것 갯수).fill(false);
+let visited = new Array(방문여부 표시해야할 것 갯수).fill(false); // 중복 비허용일 때에만 필요함.
 let output = []; //결과 출력용
 
 function dfs(depth){

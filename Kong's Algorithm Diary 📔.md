@@ -37,8 +37,12 @@
 	- 순열=백트래킹
 - 10974번
 	- https://www.acmicpc.net/problem/10974
+	- 15649와 거의 동일한 문제.
+	- 중복되어선 안된다면 (일반 순열) visited 체크 필요
+	- 중복되어도 되면 체크 안해도 되겠지
 - 7490번
 	- https://www.acmicpc.net/problem/7490
+	- javascript eval(string형태의 수식)
 - 15650번
 	- https://www.acmicpc.net/problem/15650
 - 15651번
