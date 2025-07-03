@@ -29,24 +29,13 @@ function recursive(number) {
   }
 }
 
-recursive(1)
+// recursive(1)
 
-console.log(answer);
+// console.log(answer);
 
 function calculate(orgArr) {
-  let str = orgArr.join('');
-  console.log(str)
-  let arr = str.replace(' ', '').split(/([+\-*\/])/);
-  let sum = 0;
-
-  for (let i = 0; i < arr.length; i++) {
-    if (i == 0) sum += Number(arr[i]);
-    else if (typeof (Number(arr[i])) === 'number') {
-      if (arr[i - 1] === '+') {
-        sum += Number(arr[i]);
-      } else if (arr[i - 1] === '-') {
-        sum -= Number(arr[i]);
-      }
-    }
-  }
+  let str = orgArr.join('').replaceAll(' ', '');
+  return eval(str);
 }
+
+console.log(calculate(['1', '+', '2']));
