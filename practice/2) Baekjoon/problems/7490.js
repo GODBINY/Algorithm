@@ -6,30 +6,42 @@ let input = fs
   .split("\n");
 
 console.log(input);
-
-const N = 3;
+let N = 0;
 let result = [];
-let cal = ['+', '-', ' '];
+let cal = [' ', '+', '-'];
 let answer = [];
 
+resultFunc(3)
+
+function resultFunc(number) {
+  N = number
+  recursive(1)
+  console.log(answer);
+}
+
 function recursive(number) {
-  if (calculate(result) === 0 && number == N + 1) {
-    answer.push(result); // 한번에 모으던가 바로 출력하던가
+  if (number == N + 1) {
+    if (calculate(result) === 0) {
+      answer.push(result.join('')); // 한번에 모으던가 바로 출력하던가
+    }
     return;
   }
-  for (let i = 0; i < 3; i++) { // 연산 반복
-    result.push(cal[i] + number);
+  if (number == 1) {
+    result.push(number);
     recursive(number + 1);
     result.pop()
+
+  } else {
+    for (let i = 0; i < 3; i++) { // 연산 반복
+      result.push(cal[i] + number);
+      recursive(number + 1);
+      result.pop()
+    }
   }
 }
 
-recursive(1)
-
-console.log(answer);
 
 function calculate(orgArr) {
   let str = orgArr.join('').replaceAll(' ', '');
   return eval(str);
 }
-
