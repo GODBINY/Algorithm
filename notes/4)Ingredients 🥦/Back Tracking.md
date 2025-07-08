@@ -67,89 +67,113 @@ function dfs(depth){
 ```
 
 ====== 
-## **1. 순열 (Permutation)**
-**설명**: 서로 다른 n개 중에서 **순서 있게 중복 없이** k개를 뽑는 경우
-**특징**: visited 사용, 순서 중요
+# 순열, 중복순열, 조합, 중복조합 정리 (with DFS)
+  
+
+아래는 백트래킹(DFS) 방식으로 구현한 예시 코드들과 함께  
+각 유형(순열, 중복순열, 조합, 중복조합)에 대한 설명입니다.
+
+---
+
+  
+
+## 1. 순열 (Permutation)
+
+- ****설명****: 서로 다른 n개 중에서 ****중복 없이****, ****순서를 고려****하여 k개를 뽑는 경우
+- ****예시****: [1, 2], [2, 1] → 서로 다른 경우로 셈
+- ****특징****: `visited` 배열 필요
+
 ```js
-let visited = new Array(n).fill(false);
+
+let path = [];
+let visited = Array(N + 1).fill(false);
+
+
+function dfs(depth) {
+  if (depth === M + 1) {
+    console.log(path.join(' '));
+    return;
+  }
+  
+  for (let i = 1; i <= N; i++) {
+    if (visited[i]) continue;
+    visited[i] = true;
+    path.push(i);
+    dfs(depth + 1);
+    path.pop();
+    visited[i] = false;
+  }
+}
+```
+---
+##  2. 중복 순열 (Permutation with Repetition)
+- ****설명****: 서로 다른 n개 중에서 ****중복 허용****, ****순서를 고려****하여 k개를 뽑는 경우
+- ****예시****: [1, 1], [2, 1], [1, 2] 모두 다른 경우
+- ****특징****: `visited` 불필요, 그냥 모든 수를 다시 고를 수 있음
+```js
 let path = [];
 
 function dfs(depth) {
-  if (depth === k) {
-    console.log(path.join(' '));
-    return;
-  }
-
-  for (let i = 0; i < n; i++) {
-    if (visited[i]) continue;
-
-    visited[i] = true;
-    path.push(arr[i]);
-    dfs(depth + 1);
-    path.pop();
-    visited[i] = false;
-  }
+  if (depth === M + 1) {
+    console.log(path.join(' '));
+    return;
+  }
+  
+  for (let i = 1; i <= N; i++) {
+    path.push(i);
+    dfs(depth + 1);
+    path.pop();
+  }
 }
 ```
-
-## **2. 중복 순열 (Permutation with Replacement)**
-**설명**: 서로 다른 n개 중에서 **순서 있게 중복 허용하여** k개를 뽑는 경우
-**특징**: visited 없음, 순서 중요
-```js
-let path = [];
-
-function dfs(depth) {
-  if (depth === k) {
-    console.log(path.join(' '));
-    return;
-  }
-
-  for (let i = 0; i < n; i++) {
-    path.push(arr[i]);
-    dfs(depth + 1);
-    path.pop();
-  }
-}
-```
-
-## **3. 조합 (Combination)**
-**설명**: 서로 다른 n개 중에서 **순서 없이 중복 없이** k개를 뽑는 경우
-순서 없음 : 중복되면 안된다는 뜻 - 오름차순 정렬 등이 해당된다.
-정렬을 하지 않아도 결과는 잘 나오지만 결과값이 정렬이 안되어있을 뿐임.
-**특징**: start 인덱스 사용, 순서 무시
+---
+##  3. 조합 (Combination)
+- ****설명****: 서로 다른 n개 중에서 ****중복 없이****, ****순서를 고려하지 않고**** k개를 뽑는 경우
+- ****예시****: [1, 2]와 [2, 1]은 같은 것으로 취급 → 하나만 출력
+- ****특징****: `start` 인덱스 사용
+  
 ```js
 let path = [];
 
 function dfs(start, depth) {
-  if (depth === k) {
-    console.log(path.join(' '));
-    return;
-  }
-
-  for (let i = start; i < n; i++) {
-    path.push(arr[i]);
-    dfs(i + 1, depth + 1);
-    path.pop();
-  }
+  if (depth === M + 1) {
+    console.log(path.join(' '));
+    return;
+  }
+  
+  for (let i = start; i <= N; i++) {
+    path.push(i);
+    dfs(i + 1, depth + 1);
+    path.pop();
+  }
 }
 ```
-
-## **4. 중복 조합 (Combination with Replacement)**
-**설명**: 서로 다른 n개 중에서 **순서 없이 중복 허용하여** k개를 뽑는 경우
-**특징**: start 인덱스 사용, visited 없음, 중복 허용
+---
+## 4. 중복 조합 (Combination with Repetition)
+- ****설명****: 서로 다른 n개 중에서 ****중복 허용****, ****순서를 고려하지 않고**** k개를 뽑는 경우
+- ****예시****: [1, 1], [1, 2], [2, 2] → 가능
+- ****특징****: `start` 유지하면서 중복 허용
 ```js
 let path = [];
 
 function dfs(start, depth) {
-  if (depth === k) {
-    console.log(path.join(' '));
-    return;
-  }
+  if (depth === M + 1) {
+    console.log(path.join(' '));
+    return;
+  }
 
-  for (let i = start; i < n; i++) {
-    path.push(arr[i]);
-    dfs(i, depth + 1); // 중복 허용
-    path.pop();
-  }
+  for (let i = start; i <= N; i++) {
+    path.push(i);
+    dfs(i, depth + 1); // i 그대로 넣기 → 중복 허용
+    path.pop();
+  }
 }
 ```
+---
+## 정리 비교표
+| 유형       | 중복 허용     | 순서 고려     | 핵심 포인트         |
+| -------- | --------- | --------- | -------------- |
+| 순열       | ❌         | ✅         | visited 사용     |
+| 중복 순열    | ✅         | ✅         | 그냥 다 돌기        |
+| 조합       | ❌         | ❌         | start 사용       |
+| 중복 조합    | ✅         | ❌         | start 고정       |

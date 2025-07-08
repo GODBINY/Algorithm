@@ -45,33 +45,34 @@
 	- javascript eval(string형태의 수식)
 	- 테스트케이스별로 공백 주고싶으면 '' push하고 join('\n')
 	- 배열 속 배열은 초기화 잘해주거나 깊은복사 쓰거나 해야 문제가 없다.
+### 25.07.08, 25.07.09
 - 15650번
 	- https://www.acmicpc.net/problem/15650
+	- visited와 start는 둘 중 하나만 쓰면 된다. 자리수는 깊이, 경우의 수는 for문에서 돌리면 된다.
+	- 그냥 조합이면 중복이 허용되지 않는다는거니까 start(호출한)인덱스보다 더 뒤인애들만 봐야하는거
 - 15651번
 	- https://www.acmicpc.net/problem/15651
+	- 중복 순열 문제.
+	- 순열,조합, 중복순열, 중복조합 차이 확실히 해두자.
 - 15652번
 	- https://www.acmicpc.net/problem/15652
-### 25.06.30
 - 10971번
 	- https://www.acmicpc.net/problem/10971
 - 2961번
 	- https://www.acmicpc.net/problem/2961
 - 6603번
 	- https://www.acmicpc.net/problem/6603
-### 25.07.01
 - 9663번
 	- https://www.acmicpc.net/problem/9663
 - 1987번
 	- https://www.acmicpc.net/problem/1987
 - 2529번
 	- https://www.acmicpc.net/problem/2529
-### 25.07.02
 - DFS 개념
 - 1987번
 	- https://www.acmicpc.net/problem/2606
 - 2529번
 	- https://www.acmicpc.net/problem/1012
-### 25.07.03
 - 1240번
 	- https://www.acmicpc.net/problem/1240
 - 4803번
