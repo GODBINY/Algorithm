@@ -7,19 +7,25 @@ let input = fs
 
 console.log(input);
 
-const N = Number(input[0]);
-const M = Number(input[1]);
+const N = Number(input[0].split(' ')[0]);
+const M = Number(input[0].split(' ')[1]);
+let result = [];
+let answer = []
 
-function dfs(depth){ // 깊이는 M
-	if(depth==M+1){
-		출력 관련 처리; // 한번에 모으던가 바로 출력하던가
-	}
-	for(자식 노드를 하나씩 확인){
-		if(임의의 조건을 만족하면){
-      dfs(depth);
-			자식노드 방문처리;
-			자식노드 방문처리 해제;
-		} // 조건에 안맞으면 애초에 안탄다
-	}
+// 1부터 N까지 자연수 중에서 중복 없이 M개를 고른 수열
+// 고른 수열은 오름차순이어야 한다.
+
+function dfs(start, depth) { // 깊이는 M
+  if (depth == M + 1) {
+    answer.push(result.join(' '));
+    return;
+  }
+  for (let i = start; i <= N; i++) {
+    result.push(i);
+    dfs(i + 1, depth + 1);
+    result.pop(i);
+  }
 }
 
+dfs(1, 1);
+console.log(answer.join('\n'))
