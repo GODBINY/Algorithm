@@ -6,19 +6,22 @@ let N = 0;
 let result = [];
 let cal = [" ", "+", "-"];
 let answer = [];
+let totalResult = [];
 
-for (let i = 1; i <= input[0]; i++) {
-  // let totalResult = [];
-  // totalResult.push(resultFunc(Number(input[i])));
-  // totalResult.push('\n');
-  console.log(i);
-  console.log(resultFunc(Number(input[i])));
+for (let i = 1; i <= Number(input[0]); i++) {
+  totalResult.push(resultFunc(Number(input[i])));
+  if (i != input[0]) {
+    totalResult.push('');
+  }
 }
 
+console.log(totalResult.join('\n'));
+
 function resultFunc(number) {
+  answer = [];
   N = number;
   recursive(1);
-  return answer;
+  return answer.join('\n');
 }
 
 function recursive(number) {
@@ -29,7 +32,7 @@ function recursive(number) {
     return;
   }
   if (number == 1) {
-    result.push(number);
+    result.push(String(number));
     recursive(number + 1);
     result.pop();
   } else {

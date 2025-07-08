@@ -43,6 +43,8 @@
 - 7490번
 	- https://www.acmicpc.net/problem/7490
 	- javascript eval(string형태의 수식)
+	- 테스트케이스별로 공백 주고싶으면 '' push하고 join('\n')
+	- 
 - 15650번
 	- https://www.acmicpc.net/problem/15650
 - 15651번
