@@ -50,12 +50,16 @@
 	- https://www.acmicpc.net/problem/15650
 	- visited와 start는 둘 중 하나만 쓰면 된다. 자리수는 깊이, 경우의 수는 for문에서 돌리면 된다.
 	- 그냥 조합이면 중복이 허용되지 않는다는거니까 start(호출한)인덱스보다 더 뒤인애들만 봐야하는거
+	- 중복불가(메인 배열이 한개씩 늘어나는 고유 수 배열이면  start쓰면 되고, 아니라면 visited도 같이 써야함.)
 - 15651번
 	- https://www.acmicpc.net/problem/15651
 	- 중복 순열 문제.
 	- 순열,조합, 중복순열, 중복조합 차이 확실히 해두자.
+	- 중복가능(visited필요없어)
 - 15652번
 	- https://www.acmicpc.net/problem/15652
+	- 중복 조합 문제.
+	- 중복 가능(>visited필요읎어), 자기랑 같거나 큰거(start)
 - 10971번
 	- https://www.acmicpc.net/problem/10971
 - 2961번
