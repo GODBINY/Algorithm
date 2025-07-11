@@ -104,7 +104,7 @@ function dfs(depth) {
     visited[i] = false;
   }
 }
-```
+a```
 ---
 ##  2. 중복 순열 (Permutation with Repetition)
 - ****설명****: 서로 다른 n개 중에서 ****중복 허용****, ****순서를 고려****하여 k개를 뽑는 경우
