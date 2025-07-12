@@ -14,22 +14,23 @@ let min = Infinity;
 let tempArr = [];
 
 
-function dfs(depth){ // depth는 요리의 종류
-  if(depth == N + 2){
-    return;
+function dfs(startIdx) {
+  if (tempArr.length > 0) {
+    const diff = calculate(tempArr);
+    if (diff < min) {
+      min = diff;
+    }
   }
-	if(calculate(tempArr)<min){
-    min = calculate(tempArr);
-	}
-	for(let i=0; i<N;i++){
+
+  for (let i = startIdx; i < N; i++) {
     tempArr.push(sbList[i]);
-		dfs(depth+1);
+    dfs(i + 1);
     tempArr.pop();
-	}
+  }
 }
 
-dfs(1); //요리는 최소 1개이상 있어야함.
-console.log(min)
+dfs(0);
+console.log(min);
 
 // 신맛전체곱 + 쓴맛전체합 계산기
 function calculate(arr){
