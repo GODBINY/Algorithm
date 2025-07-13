@@ -25,7 +25,7 @@ while (start <= end) {
 
   if (total >= k) {
     result = mid;
-    end = mid - 1; // 더 작은 쪽도 조건 만족할지 확인
+    end = mid - 1; // 더 작은 쪽도 조건 만족할지 확인 - 이진탐색이 아니라 파라메트릭 서치 써야하는 이유.
   } else {
     start = mid + 1; // 더 큰 쪽도 조건 만족할지 확인 (더 큰 값이 필요할 경우)
   }

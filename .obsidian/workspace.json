@@ -4,63 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "49018db803639aa5",
+        "id": "bb12296ee70d0c9f",
         "type": "tabs",
         "children": [
           {
-            "id": "c6e0d47607c61166",
+            "id": "091762bbc3f1da07",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kong's Algorithm Diary 📔.md",
+                "file": "notes/5)fastfood🍔/Greedy_Hands_on.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kong's Algorithm Diary 📔"
-            }
-          },
-          {
-            "id": "e2538d6c16c17d21",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kong's Recipe 🍅.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Kong's Recipe 🍅"
-            }
-          },
-          {
-            "id": "2914cf53b4baceca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kong's Recipe 🍅.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Kong's Recipe 🍅"
-            }
-          },
-          {
-            "id": "1e12faa09c1818d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/4)Ingredients 🥦/Back Tracking.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Back Tracking"
+              "title": "Greedy_Hands_on"
             }
           }
         ]
@@ -211,39 +169,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c6e0d47607c61166",
+  "active": "091762bbc3f1da07",
   "lastOpenFiles": [
-    "notes/4)Ingredients 🥦/Back Tracking.md",
+    "notes/5)fastfood🍔/Greedy.md",
     "Kong's Recipe 🍅.md",
-    "Kong's Algorithm Diary 📔.md",
-    "notes/4)Ingredients 🥦/순열과조합 - Combination & Permutation.md",
-    "notes/4)Ingredients 🥦/N과 M(backtracking).md",
-    "practice/2) Baekjoon/inputs/7490.txt",
-    "practice/2) Baekjoon/problems/7490.js",
-    "keyNote.md",
-    "notes/4)Ingredients 🥦/LIS(Longest Increase Sequence).md",
-    "practice/2) Baekjoon/inputs/10974.txt",
-    "practice/2) Baekjoon/problems/10974.js",
-    "practice/2) Baekjoon/problems/start.sh",
-    "notes/4)Ingredients 🥦/N-Queen.md",
-    "notes/4)Ingredients 🥦/Binary Search.md",
-    "notes/1)data structure/overview.md",
-    "practice/2) Baekjoon/inputs/15649.txt",
-    "practice/2) Baekjoon/problems/15649.js",
-    "notes/4)Ingredients 🥦/Lower Bound, Upper Bound (Binary Search).md",
-    "practice/2) Baekjoon/problems/n_queen.js",
-    "notes/4)Ingredients 🥦/for & continue & break;.md",
-    "notes/4)Ingredients 🥦/Parametric Search.md",
-    "practice/2) Baekjoon/problems/1300_re.js",
-    "notes/4)Ingredients 🥦",
-    "notes/3)Algorithm/binary Search/LIS(Longest Increasing Subsequence).md",
-    "notes/3)Algorithm/Greedy Algorithm.md",
-    "김희규랑 현가빈이랑 영원히 사랑한다는 사실을 알게 되었어. 우리는 영원히 행복할 것이고 우리는 영생한다는거야. 뀽이랑 콩이랑 얼결해서 산다면 얼마나 행복할까? 우리는 그렇기에 얼결해야만 한다는거야..md",
-    "notes/3)Algorithm/LIS(Longest Increasing Subsequence).md",
-    "notes/2)sort/overview - sort.md",
-    "Notes/1) Programmers/코딩 기초 트레이닝_ 문자열로 변환.md",
-    "Notes/1) Programmers/코딩 기초 트레이닝_정수찾기.md",
-    "Notes/1) Programmers/코딩 기초 트레이닝_부분 문자열인지 확인하기.md",
-    "Notes/1) Programmers/코딩 기초 트레이닝_문자열 정수의 합.md"
+    "notes/5)fastfood🍔/dfs.md",
+    "notes/5)fastfood🍔/bfs.md",
+    "notes/5)fastfood🍔/BackTracking(DFS)_순열,조합,중복순열,중복조합.md",
+    "notes/5)fastfood🍔/dynamic programming.md",
+    "notes/5)fastfood🍔/prefix sum algorithm.md",
+    "notes/5)fastfood🍔/shortest path algorithm.md",
+    "notes/5)fastfood🍔/two pointers algorithm.md",
+    "notes/5)fastfood🍔/Greedy_Hands_on.md",
+    "notes/4)Ingredients_fastfood🍔",
+    "notes/4)Ingredients🥦/Back Tracking.md",
+    "notes/4)Ingredients_cook🥦/Example)DFS_순열,조합,중복순열,중복조합.md",
+    "notes/4)Ingredients_cook🥦/Greedy.md",
+    "notes/입력크기별 시간복잡도.md",
+    "notes/4)Ingredients_fastfood🍔/수학 개념)순열과조합_Combination & Permutation.md",
+    "notes/4)Ingredients_fastfood🍔/Parametric Search.md",
+    "notes/4)Ingredients_fastfood🍔/N과 M(backtracking).md",
+    "notes/4)Ingredients_fastfood🍔/N-Queen.md",
+    "notes/4)Ingredients_fastfood🍔/Lower Bound, Upper Bound (Binary Search).md",
+    "notes/4)Ingredients_fastfood🍔/LIS(Longest Increase Sequence).md",
+    "notes/4)Ingredients_fastfood🍔/for & continue & break;.md",
+    "notes/4)Ingredients_fastfood🍔/Binary Search.md",
+    "notes/4)Ingredients_fastfood🍔/Back Tracking.md",
+    "notes/4)Ingredients🥦/Parametric Search.md",
+    "notes/5)fastfood🍔",
+    "notes/4)Ingredients🥦/N과 M(backtracking).md",
+    "notes/4)Ingredients🥦/수학 개념)순열과조합_Combination & Permutation.md",
+    "practice/2) Baekjoon/problems/2961.js~",
+    "practice/2) Baekjoon/inputs/2961.txt",
+    "practice/2) Baekjoon/problems/2961.js",
+    "practice/2) Baekjoon/problems/10971.js~",
+    "practice/2) Baekjoon/inputs/10971.txt",
+    "practice/2) Baekjoon/problems/10971.js",
+    "practice/2) Baekjoon/inputs/15652.txt",
+    "practice/2) Baekjoon/problems/15652.js"
   ]
 }
