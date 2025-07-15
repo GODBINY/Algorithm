@@ -4,8 +4,7 @@ let input = fs
   .readFileSync("../inputs/10971.txt")
   .toString()
   .trim()
-  .split("
-");
+  .split("\n");
 
 const N = Number(input[0]);
 let W = [];
@@ -28,7 +27,7 @@ function dfs(before, depth) {
 
   for (let i = 0; i < N; i++) {
     if (visited[i] || (depth > 0 && W[before][i] === 0)) continue;
-    
+
     visited[i] = true;
     path.push(i);
     dfs(i, depth + 1);
