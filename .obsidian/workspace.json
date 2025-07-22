@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/4)Ingredients🥦/Back Tracking.md",
+                "file": "Back Tracking_내가 정리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Back Tracking"
+              "title": "Back Tracking_내가 정리"
             }
           }
         ]
@@ -169,49 +169,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "76c7bc3d48682d02",
-    "type": "floating",
-    "children": [
-      {
-        "id": "981ce9baa956fa80",
-        "type": "window",
-        "children": [
-          {
-            "id": "aa984aec451c361d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "a42fa58133594528",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Back Tracking_내가 정리.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Back Tracking_내가 정리"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 903,
-        "y": 52,
-        "width": 888,
-        "height": 1053,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "a42fa58133594528",
+  "active": "6aede8bf8244e536",
   "lastOpenFiles": [
-    "notes/4)Ingredients🥦/Back Tracking.md",
+    "아이디어_펫.md",
     "Back Tracking_내가 정리.md",
+    "notes/4)Ingredients🥦/Back Tracking.md",
     "notes/5)fastfood🍔/BackTracking(DFS)_순열,조합,중복순열,중복조합.md",
     "notes/4)Ingredients🥦/수학 개념)순열과조합_Combination & Permutation.md",
     "Kong's Recipe 🍅.md",
@@ -238,7 +200,6 @@
     "notes/4)Ingredients_fastfood🍔/LIS(Longest Increase Sequence).md",
     "notes/4)Ingredients_fastfood🍔/for & continue & break;.md",
     "notes/4)Ingredients_fastfood🍔/Binary Search.md",
-    "notes/4)Ingredients_fastfood🍔/Back Tracking.md",
     "notes/5)fastfood🍔",
     "practice/2) Baekjoon/problems/2961.js~",
     "practice/2) Baekjoon/inputs/2961.txt",

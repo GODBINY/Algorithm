@@ -37,5 +37,17 @@ function dfs(start, depth){
 ```
 
 - 순열
+```js
+const n = 0;
+const r = 0;
+let path = [];
+
+dfs(0,0);
+
+function dfs(start, depth) {
+
+}
+
+```
 - 중복조합
 - 중복순열
