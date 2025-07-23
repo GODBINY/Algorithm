@@ -13,41 +13,115 @@ function recursive(){
 	}
 }```
 
-- 조합
-	- 오름차순 정렬이 미리 되어있어야한다. 
+
+n개에서 r개 고르기면, n으로 빈 배열 만들어주면 됨.
+## 1. 순열 (Permutation, nP r)
+
 ```js
-const n = 0; // 내가 가진 숫자 전체의 갯수
-const r = 0; // 뽑아야 하는 수의 갯수
-let path = [];
+function permutation(arr, r) {
+  const result = [];
+  // 방문 여부를 체크할 배열
+  const visited = new Array(arr.length).fill(false);
 
-dfs(0,0);
+  function backtrack(path) {
+    // r개를 모두 골랐으면 결과에 추가
+    if (path.length === r) {
+      result.push([...path]);
+      return;
+    }
+    // 각 인덱스 별로 시도
+    for (let i = 0; i < arr.length; i++) {
+      if (visited[i]) continue; // 이미 쓴 값은 패스
+      visited[i] = true;      // 방문 처리
+      path.push(arr[i]);      // 현재 값 추가
+      backtrack(path);        // 다음 단계로
+      path.pop();             // 복귀 시 마지막값 제거
+      visited[i] = false;     // 방문 해제
+    }
+  }
+  backtrack([]);
+  return result;
+}
 
-function dfs(start, depth){
-	if(depth === r){ // 인덱스는 0부터 시작이니
-		console.log(path.join(' '));
-		return;
-	}
-	for(let i=start; i<n; i++){
-		// 인덱스 기준으로 수 뽑는게 아니라 arr로 주어지면, 미리 오름차순 정렬 해둬야한다.
-		path.push(i); // 정렬된 배열을 쓸거면 path.push(arr[i]);
-		dfs(i+1, depth+1);
-		path.pop();
-	}
+
+```
+
+## 2. 조합 (Combination, nC r)
+
+```js
+function combination(arr, r) {
+  const result = [];
+
+  // start: 조합에서 중복 선택 막기 위한 시작 인덱스
+  function backtrack(start, path) {
+    // r개를 모두 골랐으면 결과에 추가
+    if (path.length === r) {
+      result.push([...path]);
+      return;
+    }
+    // 시작 인덱스부터 반복 (이전값 재선택 방지)
+    for (let i = start; i < arr.length; i++) {
+      path.push(arr[i]);
+      backtrack(i + 1, path); // 다음엔 i+1부터 시작
+      path.pop();             // 복귀시 마지막값 제거
+    }
+  }
+  backtrack(0, []);
+  return result;
+}
+```
+## 3. 중복 순열 (Permutation with Repetition)
+
+javascript
+
+```js
+function permWithRep(arr, r) {
+  const result = [];
+
+  function backtrack(path) {
+    if (path.length === r) {
+      result.push([...path]);
+      return;
+    }
+    for (let i = 0; i < arr.length; i++) {
+      path.push(arr[i]);
+      backtrack(path);
+      path.pop();
+    }
+  }
+  backtrack([]);
+  return result;
+}
+
+```
+
+## 4. 중복 조합 (Combination with Repetition)
+
+```javascript
+function combWithRep(arr, r) {
+  const result = [];
+
+  function backtrack(start, path) {
+    if (path.length === r) {
+      result.push([...path]);
+      return;
+    }
+    for (let i = start; i < arr.length; i++) {
+      path.push(arr[i]);
+      backtrack(i, path); // 지금 값 포함되어도 되니까
+      path.pop();
+    }
+  }
+  backtrack(0, []);
+  return result;
 }
 ```
 
-- 순열
+## 사용 방법 예시
 ```js
-const n = 0;
-const r = 0;
-let path = [];
-
-dfs(0,0);
-
-function dfs(start, depth) {
-
-}
-
+const arr = [1, 2, 3];
+console.log(permutation(arr, 2));
+console.log(combination(arr, 2));
+console.log(permWithRep(arr, 2));
+console.log(combWithRep(arr, 2));
 ```
-- 중복조합
-- 중복순열
