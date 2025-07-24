@@ -5,16 +5,16 @@ let input = fs
   .trim()
   .split("\n");
 
-console.log(Number(input[0]));
 const number = Number(input[0]);
 let path = [];
+let answer = 0;
 
 function recursive(depth) {
-  console.log(depth)
-  if (depth === number) {
-    console.log(path);
+  if (depth === number + 1) {
+    answer++;
+    return;
   }
-  for (let i = 0; i < number; i++) {
+  for (let i = 1; i <= number; i++) {
     if (!isPossible(depth, i)) continue;
     path.push([depth, i]);
     recursive(depth + 1);
@@ -23,15 +23,14 @@ function recursive(depth) {
 }
 
 function isPossible(a, b) {
-  let answer = true;
-  for ([x, y] in path) {
-    if (x === a) answer = false;
-    if (y === b) answer = false;
-    if (Math.abs(x - a) === Math.abs(y - b)) answer = false;
+  if (path.length === 0) return true;
+  for (let [x, y] of path) {
+    if ((x === a) || (y === b) || Math.abs(x - a) === Math.abs(y - b)) {
+      return false;
+    }
   }
-  return answer;
+  return true;
 }
 
-// recursive(0);
-
-console.log(isPossible(0, 0))
+recursive(1);
+console.log(answer);
