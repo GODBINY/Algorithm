@@ -71,8 +71,11 @@
 	- 근데 신맛 짠맛 계산한게 기존 min보다 크면 계산 안해도됨
 - 6603번
 	- https://www.acmicpc.net/problem/6603
+### 25.07.25
 - 9663번
 	- https://www.acmicpc.net/problem/9663
+	- N-queen 문제 다시풀었는데 맞음 ㅎㅎ
+	- 다만! [[구조분해할당 - for문]] 유의하자.
 - 1987번
 	- https://www.acmicpc.net/problem/1987
 - 2529번
