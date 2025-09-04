@@ -7,9 +7,8 @@ let input = fs
 
 const num = Number(input[0]);
 const list = input[1].split(' ');
-let path = [];
+let result = [];
 let visited = [];
-let compareCnt = 0;
 
 console.log(num);
 console.log(list);
