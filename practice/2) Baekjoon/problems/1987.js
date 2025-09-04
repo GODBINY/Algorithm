@@ -16,33 +16,33 @@ for (let i = 1; i <= r; i++) {
 
 console.log(path);
 
-function recursive(x, y) {
+function recursive(x, y, depth) {
   // 갈 수 있는 모든 곳이 이미 들렀던 알파벳이면 종료
   if (!canGo(x, y)) {
     return;
   }
-  footPrint.push(path[x]?.[y])
-  count++;
+  footPrint.push(path[x]?.[y]);
+  console.log(footPrint)
+  count = Math.max(count, depth);
+
   // 네 방향 다 가보기
-  recursive(x + 1, y);
-  recursive(x, y + 1);
-  recursive(x - 1, y);
-  recursive(x, y - 1);
+  recursive(x + 1, y, depth + 1);
+  recursive(x, y + 1, depth + 1);
+  recursive(x - 1, y, depth + 1);
+  recursive(x, y - 1, depth + 1);
+
+  footPrint.pop();
 }
 
 function canGo(a, b) {
-  console.log(a, b);
   const alphabet = path[a]?.[b];
-  console.log(alphabet)
-  console.log(footPrint)
   let answer = false
   if (alphabet === undefined) answer = false;
   if (alphabet && !footPrint.includes(alphabet)) {
     answer = true;
   }
-  console.log(answer)
   return answer;
 }
 
-recursive(0, 0);
+recursive(0, 0, 1);
 console.log(count)
