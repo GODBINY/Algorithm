@@ -21,6 +21,7 @@ function dfs(current) {
 
   for (let i = 0; i <= 9; i++) {
     if (!visited[i]) {
+      // 이전 수 연산자 지금 수 했을 때 말 안되기 시작하면 continue로 넘겨버리도록 추가
       visited[i] = true;
       current.push(i);
 
