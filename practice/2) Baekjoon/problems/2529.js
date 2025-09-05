@@ -1,12 +1,8 @@
 let fs = require("fs");
-let input = fs
-  .readFileSync("../inputs/2529.txt")
-  .toString()
-  .trim()
-  .split("\n");
+let input = fs.readFileSync("../inputs/2529.txt").toString().trim().split("\n");
 
 const num = Number(input[0]);
-const list = input[1].split(' ');
+const list = input[1].split(" ");
 let result = [];
 let visited = [];
 
@@ -14,7 +10,7 @@ console.log(num);
 console.log(list);
 
 function dfs(current) {
-  if (current.length === num) {
+  if (current.length === num + 1) {
     result.push([...current]);
     return;
   }
@@ -34,4 +30,3 @@ function dfs(current) {
 }
 dfs([]);
 console.log(result);
-
