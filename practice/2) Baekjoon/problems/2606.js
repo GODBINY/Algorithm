@@ -5,11 +5,7 @@ let input = fs
   .trim()
   .split("\n");
 
-console.log(input);
 const visited = Array(Number(input[0]) + 1).fill(false);
-const num = Number(input[1]);
-
-console.log(visited)
 
 function getAdjacencyList(list) {
   let adjacencyList = Array(Number(input[0]) + 1).fill(null).map(() => []);
@@ -17,7 +13,9 @@ function getAdjacencyList(list) {
     let a = Number(i.split(' ')[0]);
     let b = Number(i.split(' ')[1]);
     adjacencyList[a].push(b);
+    adjacencyList[b].push(a);
   }
+  console.log(adjacencyList)
   return adjacencyList
 }
 
@@ -26,7 +24,6 @@ let count = 0;
 
 function dfs(graph, v, visited) {
   visited[v] = true;
-  console.log(v);
   count++;
   for (i of graph[v]) {
     if (!visited[i]) {
