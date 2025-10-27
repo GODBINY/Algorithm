@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Back Tracking_내가 정리.md",
+                "file": "Kong's Algorithm Diary 📔.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Back Tracking_내가 정리"
+              "title": "Kong's Algorithm Diary 📔"
+            }
+          },
+          {
+            "id": "8c5eb15027c177f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kong's Algorithm Diary 📔.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Kong's Algorithm Diary 📔"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -160,6 +175,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -169,43 +185,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6aede8bf8244e536",
+  "active": "8c5eb15027c177f6",
   "lastOpenFiles": [
-    "아이디어_펫.md",
-    "Back Tracking_내가 정리.md",
-    "notes/4)Ingredients🥦/Back Tracking.md",
-    "notes/5)fastfood🍔/BackTracking(DFS)_순열,조합,중복순열,중복조합.md",
-    "notes/4)Ingredients🥦/수학 개념)순열과조합_Combination & Permutation.md",
-    "Kong's Recipe 🍅.md",
-    "practice/2) Baekjoon/inputs/6603.txt",
-    "practice/2) Baekjoon/problems/6603.js",
-    "notes/5)fastfood🍔/Greedy_Hands_on.md",
-    "practice/dfs_순열,조합,중복순열,중복조합.md",
-    "notes/5)fastfood🍔/Greedy.md",
+    "README.md",
+    "temp.md",
+    "Kong's Algorithm Diary 📔.md",
+    "keyNote.md",
+    "notes/5)fastfood🍔/dynamic programming.md",
     "notes/5)fastfood🍔/dfs.md",
     "notes/5)fastfood🍔/bfs.md",
-    "notes/5)fastfood🍔/dynamic programming.md",
-    "notes/5)fastfood🍔/prefix sum algorithm.md",
-    "notes/5)fastfood🍔/shortest path algorithm.md",
-    "notes/5)fastfood🍔/two pointers algorithm.md",
-    "notes/4)Ingredients_fastfood🍔",
-    "notes/4)Ingredients_cook🥦/Example)DFS_순열,조합,중복순열,중복조합.md",
-    "notes/4)Ingredients_cook🥦/Greedy.md",
+    "notes/5)fastfood🍔/BackTracking(DFS)_순열,조합,중복순열,중복조합.md",
+    "practice/2) Baekjoon/inputs/1012.txt",
+    "practice/2) Baekjoon/problems/1012.js",
+    "2025-09-11.md",
+    "practice/dfs_순열,조합,중복순열,중복조합.md",
+    "practice/2) Baekjoon/problems/2529.js~",
+    "practice/2) Baekjoon/inputs/2529.txt~",
+    "notes/3)Algorithm/백트래킹, DFS, 순열과 조합.md",
+    "Back Tracking_내가 정리.md",
+    "practice/2) Baekjoon/inputs/2529.txt",
+    "practice/2) Baekjoon/problems/2529.js",
+    "Kong's Recipe 🍅.md",
+    "practice/2) Baekjoon/problems/1987.js~",
+    "practice/2) Baekjoon/inputs/1987.txt~",
+    "notes/4)Ingredients🥦/Back Tracking.md",
+    "practice/2) Baekjoon/inputs/1987.txt",
+    "practice/2) Baekjoon/problems/1987.js",
+    "notes/4)Ingredients🥦/구조분해할당 - for문.md",
+    "notes/4)Ingredients🥦/N-Queen.md",
+    "notes/4)Ingredients🥦/N과 M(backtracking).md",
+    "notes/4)Ingredients🥦/수학 개념)순열과조합_Combination & Permutation.md",
     "notes/입력크기별 시간복잡도.md",
-    "notes/4)Ingredients_fastfood🍔/수학 개념)순열과조합_Combination & Permutation.md",
-    "notes/4)Ingredients_fastfood🍔/Parametric Search.md",
-    "notes/4)Ingredients_fastfood🍔/N과 M(backtracking).md",
-    "notes/4)Ingredients_fastfood🍔/N-Queen.md",
-    "notes/4)Ingredients_fastfood🍔/Lower Bound, Upper Bound (Binary Search).md",
-    "notes/4)Ingredients_fastfood🍔/LIS(Longest Increase Sequence).md",
-    "notes/4)Ingredients_fastfood🍔/for & continue & break;.md",
-    "notes/4)Ingredients_fastfood🍔/Binary Search.md",
-    "notes/5)fastfood🍔",
-    "practice/2) Baekjoon/problems/2961.js~",
-    "practice/2) Baekjoon/inputs/2961.txt",
-    "practice/2) Baekjoon/problems/2961.js",
-    "practice/2) Baekjoon/problems/10971.js~",
-    "practice/2) Baekjoon/inputs/10971.txt",
-    "practice/2) Baekjoon/problems/10971.js"
+    "notes/5)fastfood🍔/shortest path algorithm.md",
+    "아이디어_펫.md",
+    "notes/5)fastfood🍔/Greedy_Hands_on.md",
+    "notes/5)fastfood🍔/Greedy.md",
+    "notes/5)fastfood🍔/prefix sum algorithm.md",
+    "notes/5)fastfood🍔/two pointers algorithm.md",
+    "notes/4)Ingredients_cook🥦/Example)DFS_순열,조합,중복순열,중복조합.md"
   ]
 }

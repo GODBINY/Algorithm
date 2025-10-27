@@ -76,18 +76,17 @@
 	- https://www.acmicpc.net/problem/9663
 	- N-queen 문제 다시풀었는데 맞음 ㅎㅎ
 	- 다만! [[구조분해할당 - for문]] 유의하자.
-- 1987번
+### 25.08.04
+- ⭐️1987번
 	- https://www.acmicpc.net/problem/1987
+	- 알파벳 문제인데 못풀겠음. 다시 도전하자?
+### 25.09.04
 - 2529번
 	- https://www.acmicpc.net/problem/2529
 - DFS 개념
-- 1987번
+### 25.09.07
+- 2606번
 	- https://www.acmicpc.net/problem/2606
-- 2529번
+### 25.09.11
+- 1012번
 	- https://www.acmicpc.net/problem/1012
-- 1240번
-	- https://www.acmicpc.net/problem/1240
-- 4803번
-	- https://www.acmicpc.net/problem/4803
-- 15686번
-	- https://www.acmicpc.net/problem/15686
