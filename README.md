@@ -1,10 +1,9 @@
-# GODBIN's Algorithm Study Log
+# 🧩 Algorithm Study Log
 
-> **목표:** 하루 한 문제 이상 꾸준히 풀기 !!
-> **언어:** JavaScript(Node.js), C++
-> **플랫폼:** Baekjoon Online Judge(BOJ), Programmers
+> **목표:** 하루 한 문제 이상 꾸준히 풀기  
+> **언어:** JavaScript(Node.js)  
+> **플랫폼:** Baekjoon Online Judge(BOJ)  
 > **기록 목적:** 개념 정리, 회고, 꾸준함의 시각화  
-
 
 ---
 
