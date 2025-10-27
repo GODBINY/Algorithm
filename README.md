@@ -5,6 +5,7 @@
 > **플랫폼:** Baekjoon Online Judge(BOJ), Programmers
 > **기록 목적:** 개념 정리, 회고, 꾸준함의 시각화  
 
+
 ---
 
 ## 🗓️ Progress Calendar (요약)
